@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titles h2 {
+    margin: 3px 0px;
+    color: rgb(0, 0, 0, 2);
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+
+.inputs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.inputs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.inputs input[type="text"] {
+    width: 60px;
+    padding: 10px;
+    /* Add padding inside the inputs */
+    border: 1px solid #ccc;
+    /* Add a border to the inputs */
+    border-radius: 5px;
+    /* Round the corners of the inputs */
+    font-size: 1rem;
+    /* Set the font size of the inputs */
+    text-align: center;
+    /* Center the text inside the inputs */
+    margin-bottom: 5px;
+    /* Space between the input and the label */
+}
+
+.inputs label {
+    font-size: 1rem;
+    /* Set the font size of the labels */
+    color: #333;
+    /* Set the text color of the labels */
+}
+
+.getDate {
+    width: 30%;
+}
