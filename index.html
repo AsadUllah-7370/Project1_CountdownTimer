@@ -11,18 +11,26 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
 </head>
 
 <body>
     <div class="main">
         <div class="titles">
             <h2>We are Coming Soon</h2>
-            <h2>30 June 2025 10:00 PM</h2>
+            <h2 id="end-date">30 June 2025 10:00 PM</h2>
         </div>
         <div class="getDate">
-            <input type="datetime-local" name="" id="takeDate">
+            <div class="date">
+                <label for="dateInput">Or Enter Date like this: </label>
+                <h2>31 March 2025 9:00 PM</h2>
+            </div>
+            <div class="input">
+                <input type="text" id="dateInput" placeholder="Enter your text here">
+                <button id="enterBtn">Enter</button>
+            </div>
         </div>
+
         <div class="inputs">
             <div><input type="text" value="0" readonly>
                 <label for="">Days</label>
@@ -37,11 +45,12 @@
                 <label for="">Seconds</label>
             </div>
         </div>
-        <div class="custom">
-            <h6>To Check Custom Time <a href="">Click Here</a></h6>
+        <div class="completed">
+            <button id="reloadBtn">Reload</button>
         </div>
     </div>
 
 </body>
+<script src="script.js"></script>
 
 </html>
