@@ -14,7 +14,9 @@
 }
 
 .titles {
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -31,6 +33,7 @@
 
 .inputs {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -39,6 +42,7 @@
 
 .inputs div {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
@@ -71,6 +75,7 @@
 .date,
 .input {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -112,8 +117,10 @@
     align-items: center;
 }
 
+
 .completed {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -127,17 +134,4 @@
     border-color: #5b9bd5;
     box-shadow: 0 0 8px rgba(91, 155, 213, 0.3);
     outline: none;
-}
-
-/* Media Queries for responsiveness */
-
-
-@media only screen and (max-width: 600px) {
-    .inputs input[type="text"] {
-        width: 30%;
-    }
-
-    .input input[type="text"] {
-        width: 60%;
-    }
 }
